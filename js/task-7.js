@@ -38,11 +38,11 @@ StringBuilder.prototype.getValue = function () {
 };
 
 StringBuilder.prototype.padEnd = function (str) {
-  return (this.value = this.value + str);
+  return this.value += str;
 };
 
 StringBuilder.prototype.padStart = function (str) {
-  return (this.value = str + this.value);
+  return this.value = str + this.value;
 };
 
 StringBuilder.prototype.padBoth = function (str) {
